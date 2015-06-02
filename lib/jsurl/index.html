@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script type="text/javascript" src="getvars.js"></script>
+    </head>
+    <body>
+        JSURL Variable Retrieval Test Page.
+        <br/><br/>
+        Variables: <br/>
+        <script type="text/javascript">
+            for (var ctr = 0; ctr < varnames.length-1; ++ctr) {
+                document.write("name:   " + varnames[ctr] + " & value:   " + varvals[ctr] + "<br/>")
+            }
+        </script>
+    </body>
+</html>

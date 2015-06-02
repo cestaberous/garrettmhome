@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/depPage/setup/head.js"></script>
+        <meta name="google-signin-client_id" content="758810519655-gh6tgimuegfmc3op76vupr4kqnqc7uds.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script type="text/javascript" src="/login/signIn.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript" src="/depPage/setup/header.js"></script>
+        <div class="desc">/ My Projects / Web Development / Google Auth Implementation</div>
+        <div class="content">
+            <h2>Google Auth</h2>
+            <p>
+                So, lately I have been experimenting with Google APIs, and decided to implement the Google Authentication on my website.
+                At the moment, it is only half-implemented, but if you click on the copyright menu on the main website,
+                you will see a name identifier, as well as a Google Sign-In button. You can click the button to log in,
+                and (upon refreshing) the Name identifier will update. If you then click sign out, it will log you out of the website,
+                and the Name identifier will change back to 'Guest'.
+            </p>
+            <img style="border-style: solid; border-width: 3px; border-color: #CCCCCC; border-radius: 10px; width: 274px; height: 187;" src="http://glmills.gq/blog/wp-content/uploads/2015/06/signinblank.png"/>
+            <img style="border-style: solid; border-width: 3px; border-color: #CCCCCC; border-radius: 10px; width: 274px; height: 187;" src="http://glmills.gq/blog/wp-content/uploads/2015/06/signin.png"/>
+            <p>
+                I have not implemented a handler for protecting pages yet, but I am currently working on it, and plan to integrate it with my JSURL Project so that webpages can forward to a login handler, and be redirected back to a set page after authentication, as follows:
+                <br/><br/>
+                glmills.gq/login/?doLoginRedir=URL/to/redirect/to
+                <br/><br/>
+                So for example, if you click the link below, it will log you in and send you to the Projects page.
+                <br/><br/>
+                <a href="http://glmills.gq/login/index.html?doLoginRedir=/projects">http://glmills.gq/login/index.html?doLoginRedir=/projects</a>
+                <br/><br/>
+                This is not implemented yet, however. The in-progress source code is available in the aforementioned files. For those of you curious
+                about how I handled sign ins, here you go:
+            </p>
+            <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">
+              </pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">function</span> onSignIn(googleUser) {
+              <span style="color: #008800; font-weight: bold">var</span> profile <span style="color: #333333">=</span> googleUser.getBasicProfile();
+              id <span style="color: #333333">=</span> profile.getId();
+              name <span style="color: #333333">=</span> profile.getName();
+              imgurl <span style="color: #333333">=</span> profile.getImageUrl();
+              email <span style="color: #333333">=</span> profile.getEmail();
+              sessionKey <span style="color: #333333">=</span> email;
+              sessionVal <span style="color: #333333">=</span> localStorage.getItem(sessionKey);
+              localStorage.setItem(sessionKey, <span style="background-color: #fff0f0">&quot;in&quot;</span>);
+              <span style="color: #008800; font-weight: bold">if</span> (onLoginRedir <span style="color: #333333">!=</span> <span style="color: #008800; font-weight: bold">undefined</span>){
+                <span style="color: #007020">window</span>.location<span style="color: #333333">=</span>onLoginRedir;
+              }
+              <span style="color: #008800; font-weight: bold">else</span> {console.log(<span style="background-color: #fff0f0">&quot;Login Successful&quot;</span>)}
+            }
+            </pre></td></tr></table></div>
+
+        </div>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    </body>
+</html>

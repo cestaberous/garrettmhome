@@ -1,0 +1,117 @@
+@import url('http://fonts.googleapis.com/css?family=Bitter');
+
+html {
+    font-family: Bitter;
+}
+
+body {
+    background-image: url("/depPage/images/background.jpg");
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+a {
+    color: #EEEEEE;
+}
+
+.navi {
+    text-align: center;
+    background: #202020;
+    opacity: 1;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    z-index: 110;
+}
+
+.navi ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 6px;
+}
+
+.navi ul li {
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+}
+
+.navi ul li:hover {
+    background: #000000;
+}
+
+.navi ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    position: fixed;
+    z-index: 110;
+    color: #FFFFFF;
+    background: #202020;
+    opacity: 1;
+    padding: 15px;
+    font-size: 20pt;
+    bottom: 30;
+    left: 30;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.title:hover {
+    background: #000000;
+}
+
+.content {
+    top: 60;
+    left: -5;
+    color: #DDDDDD;
+    position: relative;
+    z-index: 101;
+    background: rgba(40, 40, 40, 0.8);
+    /* border: 3px;
+    border-style: solid;
+    border-color: #282828;
+    border-radius: 10px;
+    width: 100%; */
+    padding-left: 8px;
+    padding: 5px;
+    width: 100%;
+}
+
+.desc {
+    position: relative;
+    z-index: 101;
+    background: rgba(40, 40, 40, 0.8);
+    text-align: center;
+    width: 100%;
+    left: -5;
+    font-size: 20pt;
+    color: #DDDDDD;
+    padding: 4px;
+}
+
+.copyright {
+    color: #555555;
+}
+
+.crbox {
+    visibility: hidden;
+    position: fixed;
+    bottom: 30;
+    right: 50;
+    background-color: #202020;
+    color: #DDDDDD;
+    padding: 10px;
+    width: 500px;
+    border-style: solid;
+    border-color: #202020;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    z-index: 200;
+}

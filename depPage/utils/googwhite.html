@@ -1,0 +1,26 @@
+<head>
+    <style type="text/css">
+        html {
+            background-color: #000000;
+        }
+        
+        img {
+            position: fixed;
+            top: 25%;
+            left: 30%;
+        }
+        input {
+            position: fixed;
+            top: 60%;
+            left: 36%;
+            width: 400px;
+            padding: 5px;
+            border: 2px;
+            border-style: solid;
+            border-radius: 3px;
+            border-color: #FFFFFF;
+        }
+    </style>
+</head>
+<img src="https://www.google.com/images/srpr/chrome_ntp_white_logo1.png"/>
+<input type="text" id="textbox" name="search" placeholder="Search Google" onkeydown="if (event.keyCode == 13 || event.which == 13) { location='http://www.google.com/search?q=' + encodeURIComponent(document.getElementById('textbox').value);}"/>

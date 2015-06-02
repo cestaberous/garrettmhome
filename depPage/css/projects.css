@@ -1,0 +1,171 @@
+a{
+    text-decoration: none;
+}
+
+section {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+}
+div#one {
+    position: relative;
+    width: 20%;
+    height: 200px;
+    background: red;
+    float: left;
+    overflow: hidden;
+    text-decoration: none;
+}
+div#two {
+    display: inline;
+    width: 20%;
+    height: 200px;
+    background: orange;
+    float: left;
+    overflow: hidden;
+}
+div#three {
+    width: 20%;
+    height: 200px;
+    background: yellow;
+    float: left;
+    overflow: hidden;
+}
+div#four {
+    width: 20%;
+    height: 200px;
+    background: #202020;
+    float: left;
+    overflow: hidden;
+}
+div#five {
+    margin-left: 15%;
+    height: 200px;
+    background: blue;
+    overflow: hidden;
+}
+
+div#one img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -345px;
+    margin-top: -170px;
+}
+
+
+div#two img {
+    position: relative;
+    height: 310px;
+    width: 310px;
+    top: 50%;
+    left: 50%;
+    margin-left: -155px;
+    margin-top: -155px;
+}
+
+div#three img {
+    position: relative;
+    height: 225px;
+    width: 360px;
+    top: 50%;
+    left: 50%;
+    margin-left: -180px;
+    margin-top: -112px;
+}
+
+div#four img {
+    position: relative;
+    height: 256px;
+    width: 256px;
+    top: 50%;
+    left: 50%;
+    margin-left: -128px;
+    margin-top: -128px;
+}
+
+div#five img {
+    position: relative;
+    height: 600px;
+    width: 960px;
+    top: 50%;
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -270px;
+}
+
+div#one div {
+    display: none;
+    position: absolute;
+    background: rgba(40, 40, 40, 0.8);
+    bottom: 0;
+    width: 100%;
+    padding-left: 10px;
+    transition: display 0.2s linear 0s;
+    overflow: none;
+}
+
+div#two div {
+    position: absolute;
+    background: rgba(40, 40, 40, 0.8);
+    bottom: 15;
+    width: 20%;
+    padding-left: 10px;
+    display: none;
+    overflow: hidden;
+}
+
+div#three div {
+    position: absolute;
+    background: rgba(40, 40, 40, 0.8);
+    bottom: 15;
+    width: 20%;
+    padding-left: 10px;
+    display: none;
+    overflow: hidden;
+}
+
+div#four div {
+    position: absolute;
+    background: rgba(40, 40, 40, 0.8);
+    bottom: 15;
+    width: 20%;
+    padding-left: 10px;
+    display: none;
+    overflow: hidden;
+}
+
+div#five div {
+    position: absolute;
+    background: rgba(40, 40, 40, 0.8);
+    bottom: 15;
+    width: 15.15%;
+    padding-left: 10px;
+    display: none;
+    overflow: hidden;
+}
+
+div#one:hover > div {
+    display: block;
+}
+
+div#two:hover > div {
+    display: block;
+}
+
+div#three:hover > div {
+    display: block;
+}
+
+div#four:hover > div {
+    display: block;
+}
+
+div#five:hover > div {
+    display: block;
+}
+
+
+
